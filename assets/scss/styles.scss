@@ -1,4 +1,115 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .attribution,
-.success-message {
+.success-message,
+.image-mobile {
   display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  @include f-row;
+  gap: 2rem;
+  align-items: center;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  background-color: $charcoal-grey;
+  padding: 18%;
+}
+
+section {
+  margin: 0 auto;
+  background-color: $white;
+  padding: 2.5rem;
+  @include f-row();
+  justify-content: space-around;
+  border-radius: 30px;
+}
+
+.form-article {
+  padding: 6rem 5rem 5rem 3.5rem;
+  @include f-column();
+  justify-content: space-between;
+}
+
+h1,
+h2 {
+  font-size: 5.5rem;
+  @include robo-bold;
+  color: $dark-slate-grey;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  @include robo-light;
+  color: $charcoal-grey;
+  line-height: 2.5rem;
+}
+
+.intro {
+  margin: 2rem 0 2rem 0;
+}
+
+li {
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+form {
+  @include f-column;
+  gap: 1rem;
+  width: 100%;
+  label,
+  input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  input {
+    height: 6rem;
+    padding: 2rem;
+    border: 1px solid $grey;
+  }
+  input[type="submit"] {
+    background-color: $dark-slate-grey;
+    color: $white;
+    border: none;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
 }

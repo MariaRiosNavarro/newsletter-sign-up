@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+@mixin f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin f-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin robo-light {
+  font-family: $roboto;
+  font-weight: 400;
+}
+
+@mixin robo-bold {
+  font-family: $roboto-b;
+  font-weight: 700;
+}
