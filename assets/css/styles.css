@@ -14,12 +14,6 @@
   padding: 0;
 }
 
-.attribution,
-.main-section,
-.success-message {
-  display: none;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -69,6 +63,11 @@ section {
   background: linear-gradient(45deg, #ff596b, #ff654c);
   cursor: pointer;
   box-shadow: 0px 3px 25px hsl(4, 100%, 67%);
+}
+
+.main-section {
+  min-width: 900px;
+  align-items: center;
 }
 
 .form-article {
@@ -139,6 +138,11 @@ form input {
 .success-email {
   font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
   font-weight: 700;
+}
+
+.attribution,
+.image-mobile {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
