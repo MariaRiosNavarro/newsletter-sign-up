@@ -11,6 +11,8 @@
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
+// general
+
 *,
 *::before,
 *::after {
@@ -20,7 +22,7 @@
 }
 
 .attribution,
-.success-message,
+.main-section,
 .image-mobile {
   display: none;
 }
@@ -45,7 +47,7 @@ li {
 
 main {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: $charcoal-grey;
   padding: 18%;
 }
@@ -58,6 +60,18 @@ section {
   justify-content: space-around;
   border-radius: 30px;
 }
+
+.btn {
+  background-color: $dark-slate-grey;
+  color: $white;
+  border: none;
+  font-weight: 700;
+  margin: 2rem 0;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+// main-secction
 
 .form-article {
   padding: 6rem 5rem 5rem 3.5rem;
@@ -106,10 +120,36 @@ form {
     border: 1px solid $grey;
   }
   input[type="submit"] {
-    background-color: $dark-slate-grey;
-    color: $white;
-    border: none;
-    font-weight: 700;
-    margin: 2rem 0;
+    @extend .btn;
   }
 }
+
+.success-message {
+  padding: 5rem;
+  width: 33vw;
+  @include f-column;
+  h2 {
+    margin: 2rem 0;
+  }
+  img {
+    width: 64px;
+  }
+  p {
+    line-height: 2.5rem;
+  }
+  button {
+    @extend .btn;
+  }
+}
+
+.success-email {
+  font-family: $roboto-b;
+  font-weight: 700;
+}
+
+// @media screen and (max-width: 375px) {
+//   .attribution,
+//   .image-mobile {
+//     display: none;
+//   }
+// }
