@@ -41,7 +41,7 @@ li {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: hsl(235, 18%, 26%);
   padding: 18%;
 }
@@ -64,6 +64,11 @@ section {
   margin: 2rem 0;
   height: 6rem;
   border-radius: 8px;
+}
+.btn:hover, .success-message button:hover, form input[type=submit]:hover {
+  background: linear-gradient(45deg, #ff596b, #ff654c);
+  cursor: pointer;
+  box-shadow: 0px 3px 25px hsl(4, 100%, 67%);
 }
 
 .form-article {
@@ -116,6 +121,7 @@ form input {
   border: 1px solid hsl(231, 7%, 60%);
 }
 .success-message {
+  min-width: 480px;
   padding: 5rem;
   width: 33vw;
   display: flex;

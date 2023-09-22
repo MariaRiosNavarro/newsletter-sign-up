@@ -47,7 +47,7 @@ li {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: $charcoal-grey;
   padding: 18%;
 }
@@ -69,6 +69,11 @@ section {
   margin: 2rem 0;
   height: 6rem;
   border-radius: 8px;
+  &:hover {
+    background: linear-gradient(45deg, #ff596b, #ff654c);
+    cursor: pointer;
+    box-shadow: 0px 3px 25px $tomato;
+  }
 }
 
 // main-secction
@@ -125,6 +130,7 @@ form {
 }
 
 .success-message {
+  min-width: 480px;
   padding: 5rem;
   width: 33vw;
   @include f-column;
