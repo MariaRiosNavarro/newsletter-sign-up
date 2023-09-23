@@ -35,19 +35,9 @@ li {
 
 main {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: hsl(235, 18%, 26%);
-  padding: 18%;
-}
-
-section {
-  margin: 0 auto;
-  background-color: hsl(0, 0%, 100%);
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 30px;
+  padding: 17rem;
 }
 
 .btn, .success-message button, form input[type=submit] {
@@ -65,16 +55,41 @@ section {
   box-shadow: 0px 3px 25px hsl(4, 100%, 67%);
 }
 
+.section, .main-section {
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
 .main-section {
-  min-width: 900px;
+  max-width: 926px;
+  max-height: 636px;
+  overflow: hidden;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .form-article {
-  padding: 6rem 5rem 5rem 3.5rem;
+  width: 50%;
+  margin-left: 3.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.bck-image-article {
+  width: 50%;
+  overflow: hidden;
+  margin: 2.5rem;
+}
+.bck-image-article img {
+  height: 591px;
+  width: 100%;
+  margin-left: 1rem;
 }
 
 h1,
@@ -83,7 +98,7 @@ h2 {
   font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 p {
