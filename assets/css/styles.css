@@ -65,9 +65,8 @@ main {
   max-width: 926px;
   max-height: 636px;
   overflow: hidden;
-  align-items: center;
 }
-.main-section .row {
+.main-section .flex {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,7 +113,7 @@ p {
 }
 
 .intro {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0;
 }
 
 li p {
@@ -138,7 +137,13 @@ form input {
   padding: 2rem;
   border: 1px solid hsl(231, 7%, 60%);
 }
+form label {
+  font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
 .success-message {
+  display: none;
   min-width: 480px;
   padding: 5rem;
   width: 33vw;
@@ -170,6 +175,70 @@ form input {
   .attribution,
   .image-desktop {
     display: none;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .main-section {
+    margin: 0;
+    max-width: 375px;
+    max-height: 842px;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .main-section .flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .main-section .form-article {
+    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-height: 550px;
+    height: auto;
+  }
+  .main-section .form-article form,
+  .main-section .form-article .text {
+    max-width: 374px;
+    padding: 2.5rem;
+  }
+  .main-section .form-article .text h1 {
+    font-size: 3.5rem;
+  }
+  .main-section .form-article .text li {
+    row-gap: 0;
+    column-gap: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    align-items: baseline;
+  }
+  .main-section .form-article .text li p {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .main-section .bck-image-article {
+    margin: 0;
+    width: 100%;
+    height: 40%;
+  }
+  .main-section .bck-image-article .image-mobile {
+    display: block;
+    height: 280px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 }
 
