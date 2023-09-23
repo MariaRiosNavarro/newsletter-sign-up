@@ -195,7 +195,7 @@ form {
 
 // ----////////////////----📱------📱----📱-----📱-----MOBILE------📱--------📱-------📱
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 290px) and (max-width: 450) {
   // ---////////////////-----------📱---------Mobile Main Section---------📱---------📱
   .attribution,
   .image-desktop {
