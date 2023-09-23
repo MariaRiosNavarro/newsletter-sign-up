@@ -34,15 +34,16 @@ li {
 }
 
 main {
-  padding: 17rem;
+  padding-top: 10%;
   max-width: 1440px;
   margin: 0 auto;
+  width: 100vw;
 }
 
 .wrapper {
   background-color: hsl(235, 18%, 26%);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .btn, .success-message button, form input[type=submit] {
@@ -69,7 +70,6 @@ main {
 .main-section {
   width: 926px;
   height: 636px;
-  overflow: hidden;
 }
 .main-section .flex {
   display: flex;
@@ -178,51 +178,89 @@ form label {
   display: none;
 }
 
-@media screen and (min-width: 290px) and (max-width: 450px) {
+@media (max-width: 926px) {
+  .wrapper {
+    background-color: red;
+  }
+  .main-section {
+    width: 100%;
+    height: 100%;
+  }
+  .form-article {
+    gap: 2rem;
+  }
+  .bck-image-article {
+    margin: 2rem;
+  }
+  .bck-image-article img {
+    margin-left: 0;
+  }
+  h1,
+  h2 {
+    font-size: 4rem;
+    font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 359px) and (max-width: 450px) {
   .attribution,
   .image-desktop {
     display: none;
   }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   main {
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
   .main-section {
     margin: 0;
-    max-width: 375px;
-    max-height: 842px;
+    width: 100%;
+    height: 100%;
     height: 100vh;
     border-radius: 0;
   }
   .main-section .flex {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
-  .main-section .form-article {
+  .main-section .flex .form-article {
     margin-left: 0;
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
     width: 100%;
-    max-height: 550px;
+    max-height: 75%;
     height: auto;
     gap: 0;
   }
-  .main-section .form-article form,
-  .main-section .form-article .text {
-    max-width: 374px;
-    padding: 2.5rem;
+  .main-section .flex .form-article form,
+  .main-section .flex .form-article .text {
+    width: 100%;
+    padding: 2.5rem 2.5rem 0 2.5rem;
   }
-  .main-section .form-article .text h1 {
-    font-size: 3.5rem;
+  .main-section .flex .form-article form {
+    gap: 0;
   }
-  .main-section .form-article .text li {
+  .main-section .flex .form-article form label {
+    margin-bottom: 1rem;
+  }
+  .main-section .flex .form-article .text h1 {
+    font-size: 3rem;
+  }
+  .main-section .flex .form-article .text li {
     row-gap: 0;
     column-gap: 2rem;
     margin: 0;
@@ -230,21 +268,23 @@ form label {
     margin-bottom: 1rem;
     align-items: baseline;
   }
-  .main-section .form-article .text li p {
+  .main-section .flex .form-article .text li p {
     align-self: flex-start;
     margin: 0;
     padding: 0;
     height: 100%;
   }
-  .main-section .bck-image-article {
+  .main-section .flex .bck-image-article {
     margin: 0;
     width: 100%;
-    height: 40%;
+    height: 25%;
+    border-radius: 0 0 8px 8px;
   }
-  .main-section .bck-image-article .image-mobile {
+  .main-section .flex .bck-image-article .image-mobile {
     display: block;
-    height: 280px;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     margin: 0;
     padding: 0;
   }
