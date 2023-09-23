@@ -62,7 +62,6 @@ main {
 }
 
 .main-section {
-  display: none;
   max-width: 926px;
   max-height: 636px;
   overflow: hidden;
@@ -165,6 +164,13 @@ form input {
 .attribution,
 .image-mobile {
   display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .attribution,
+  .image-desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

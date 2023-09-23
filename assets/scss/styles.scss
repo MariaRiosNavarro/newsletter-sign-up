@@ -70,7 +70,7 @@ main {
 // main-secction
 
 .main-section {
-  display: none;
+  // display: none;
   @extend .section;
   max-width: 926px;
   max-height: 636px;
@@ -150,6 +150,8 @@ form {
   }
 }
 
+// Sucess message
+
 .success-message {
   // display: none;
   @extend .section;
@@ -181,9 +183,9 @@ form {
   display: none;
 }
 
-// @media screen and (max-width: 375px) {
-//   .attribution,
-//   .image-mobile {
-//     display: none;
-//   }
-// }
+@media screen and (max-width: 375px) {
+  .attribution,
+  .image-desktop {
+    display: none;
+  }
+}
