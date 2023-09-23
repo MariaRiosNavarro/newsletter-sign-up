@@ -195,9 +195,6 @@ form {
 // ----////////////////-------💻-----------------SMALL DESKSTOP---------💻-------------------💻
 
 @media (max-width: 926px) {
-  .wrapper {
-    background-color: red;
-  }
   .main-section {
     width: 100%;
     height: 100%;
@@ -216,15 +213,14 @@ form {
   h1,
   h2 {
     font-size: 4rem;
-    @include robo-bold;
-    color: $dark-slate-grey;
-    margin-bottom: 1rem;
   }
 }
 
 // ----////////////////----📱------📱----📱-----📱-----MOBILE------📱--------📱-------📱
 
-@media screen and (min-width: 359px) and (max-width: 450px) {
+// for xm mobile to big mobile
+
+@media screen and (max-width: 540px) {
   // ---////////////////-----------📱---------Mobile Main Section---------📱---------📱
   .attribution,
   .image-desktop {
@@ -236,6 +232,7 @@ form {
     height: 100%;
     margin: 0;
     padding: 0;
+    min-width: 290px;
   }
 
   main {
@@ -243,6 +240,7 @@ form {
     margin: 0;
     width: 100%;
     height: 100%;
+    min-width: 290px;
   }
 
   .main-section {
@@ -314,23 +312,6 @@ form {
       }
     }
   }
-
-  // @media screen and (max-height: 668px) {
-  //   .flex {
-  //     .form-article {
-  //       height: 80%;
-  //       .text {
-  //         padding: 2rem;
-  //       }
-  //       .text h1 {
-  //         font-size: 3rem;
-  //       }
-  //     }
-  //     .bck-image-article {
-  //       height: 20%;
-  //     }
-  //   }
-  // }
 
   // ---////////////////-----------✅---------Mobile Sucess Section---------✅---------📱
 
