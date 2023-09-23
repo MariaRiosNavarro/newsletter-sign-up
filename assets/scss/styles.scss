@@ -90,6 +90,7 @@ main {
   margin-left: 4rem;
   padding: 2rem;
   @include f-column();
+  gap: 2.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -281,5 +282,31 @@ form {
       width: 100%;
       max-width: 325px;
     }
+  }
+}
+
+// -------------❌-------ERROR STYLES-------------❌-----------------------
+
+.label-wrapper {
+  @include f-row;
+  h3 {
+    display: none;
+    // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
+    width: 100%;
+    text-align: right;
+    color: $tomato;
+    @include robo-bold;
+  }
+}
+
+.error-message {
+  color: $tomato;
+  background: rgba(255, 99, 71, 0.168);
+  border: 1px solid $tomato;
+  &::placeholder {
+    color: $tomato;
+  }
+  &:active {
+    border: $tomato;
   }
 }

@@ -41,13 +41,17 @@
               </ul>
             </div>
             <form onsubmit="submitData()">
-              <label for="email">Email address</label>
+              <div class="label-wrapper">
+                <label for="email">Email address</label>
+                <h3 data-js="error-message">Valid email required</h3>
+              </div>
               <input
                 type="email"
                 name="email"
                 id="email"
                 data-js="email"
                 placeholder="email@company.com"
+                required
               />
               <input type="submit" value="Subscribe to monthly newsletter" />
             </form>

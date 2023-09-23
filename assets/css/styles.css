@@ -80,6 +80,7 @@ main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -258,6 +259,30 @@ form label {
     width: 100%;
     max-width: 325px;
   }
+}
+.label-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.label-wrapper h3 {
+  display: none;
+  width: 100%;
+  text-align: right;
+  color: hsl(4, 100%, 67%);
+  font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.error-message {
+  color: hsl(4, 100%, 67%);
+  background: rgba(255, 99, 71, 0.168);
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.error-message::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+.error-message:active {
+  border: hsl(4, 100%, 67%);
 }
 
 /*# sourceMappingURL=styles.css.map */
