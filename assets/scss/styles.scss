@@ -73,11 +73,10 @@ main {
 // ---🖥️------------🖥️-------------Main Section DESKTOP--------🖥️----------🖥️----------🖥️
 
 .main-section {
-  // display: none;
   // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
-  max-width: 926px;
-  max-height: 636px;
+  width: 926px;
+  height: 636px;
   overflow: hidden;
 
   .flex {

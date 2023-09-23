@@ -65,8 +65,8 @@ main {
 }
 
 .main-section {
-  max-width: 926px;
-  max-height: 636px;
+  width: 926px;
+  height: 636px;
   overflow: hidden;
 }
 .main-section .flex {
