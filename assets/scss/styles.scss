@@ -11,7 +11,7 @@
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
-// general
+// ----------------------------General Styles---------------------
 
 *,
 *::before,
@@ -67,10 +67,11 @@ main {
   border-radius: 30px;
 }
 
-// main-secction
+// ---🖥️------------🖥️-------------Main Section DESKTOP--------🖥️----------🖥️----------🖥️
 
 .main-section {
-  // display: none;
+  display: none;
+  // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
   max-width: 926px;
   max-height: 636px;
@@ -152,10 +153,11 @@ form {
   }
 }
 
-// Sucess message
+// ------------✅----------------Sucess message DESKTOP---------✅---------------🖥️
 
 .success-message {
-  display: none;
+  // display: none;
+  // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
   min-width: 480px;
   padding: 5rem;
@@ -185,7 +187,10 @@ form {
   display: none;
 }
 
+// ----////////////////----📱------📱----📱-----📱-----MOBILE------📱--------📱-------📱
+
 @media screen and (max-width: 375px) {
+  // ---////////////////-----------📱---------Mobile Main Section---------📱---------📱
   .attribution,
   .image-desktop {
     display: none;
@@ -253,6 +258,28 @@ form {
         margin: 0;
         padding: 0;
       }
+    }
+  }
+
+  // ---////////////////-----------✅---------Mobile Sucess Section---------✅---------📱
+
+  .success-message {
+    margin: 0;
+    padding-top: 14.5rem;
+    height: 100vh;
+    width: 100%;
+    min-width: 375px;
+    padding: 14.5rem 2.5rem 2.5rem;
+    position: relative;
+
+    h2 {
+      font-size: 3.5rem;
+    }
+    button {
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+      max-width: 325px;
     }
   }
 }
