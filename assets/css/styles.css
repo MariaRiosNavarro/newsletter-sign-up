@@ -206,6 +206,7 @@ form label {
     width: 100%;
     max-height: 550px;
     height: auto;
+    gap: 0;
   }
   .main-section .form-article form,
   .main-section .form-article .text {
