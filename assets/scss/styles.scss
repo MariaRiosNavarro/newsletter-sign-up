@@ -40,10 +40,13 @@ li {
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
-  background-color: $charcoal-grey;
   padding: 17rem;
+  max-width: 1440px;
+}
+
+.wrapper {
+  background-color: $charcoal-grey;
+  width: 100vw;
 }
 
 .btn {
@@ -310,4 +313,12 @@ form {
   &:active {
     border: $tomato;
   }
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
 }

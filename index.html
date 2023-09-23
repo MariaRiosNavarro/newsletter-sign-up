@@ -16,75 +16,79 @@
     </title>
   </head>
   <body>
-    <main>
-      <section class="main-section" data-js="main-section">
-        <article class="flex">
-          <div class="form-article">
-            <div class="text">
-              <h1>Stay updated!</h1>
-              <p class="intro">
-                Join 60,000+ product managers receiving monthly updates on:
-              </p>
-              <ul>
-                <li>
-                  <img src="./assets/images/icon-list.svg" alt="icon" />
-                  <p>Product discovery and building what matters</p>
-                </li>
-                <li>
-                  <img src="./assets/images/icon-list.svg" alt="icon" />
-                  <p>Measuring to ensure updates are a success</p>
-                </li>
-                <li>
-                  <img src="./assets/images/icon-list.svg" alt="icon" />
-                  <p>And much more!</p>
-                </li>
-              </ul>
-            </div>
-            <form onsubmit="submitData()">
-              <div class="label-wrapper">
-                <label for="email">Email address</label>
-                <h3 data-js="error-message">Valid email required</h3>
+    <div class="wrapper">
+      <main>
+        <section class="main-section" data-js="main-section">
+          <article class="flex">
+            <div class="form-article">
+              <div class="text">
+                <h1>Stay updated!</h1>
+                <p class="intro">
+                  Join 60,000+ product managers receiving monthly updates on:
+                </p>
+                <ul>
+                  <li>
+                    <img src="./assets/images/icon-list.svg" alt="icon" />
+                    <p>Product discovery and building what matters</p>
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-list.svg" alt="icon" />
+                    <p>Measuring to ensure updates are a success</p>
+                  </li>
+                  <li>
+                    <img src="./assets/images/icon-list.svg" alt="icon" />
+                    <p>And much more!</p>
+                  </li>
+                </ul>
               </div>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                data-js="email"
-                placeholder="email@company.com"
-                required
+              <form onsubmit="submitData(); return false">
+                <div class="label-wrapper">
+                  <label for="email">Email address</label>
+                  <h3 data-js="error-message">Valid email required</h3>
+                </div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  data-js="email"
+                  placeholder="email@company.com"
+                  required
+                />
+                <input type="submit" value="Subscribe to monthly newsletter" />
+              </form>
+            </div>
+            <div class="bck-image-article">
+              <img
+                class="image-desktop"
+                data-js="image-desktop"
+                src="./assets/images/illustration-sign-up-desktop.svg"
+                alt="illustration sign up"
               />
-              <input type="submit" value="Subscribe to monthly newsletter" />
-            </form>
-          </div>
-          <div class="bck-image-article">
-            <img
-              class="image-desktop"
-              data-js="image-desktop"
-              src="./assets/images/illustration-sign-up-desktop.svg"
-              alt="illustration sign up"
-            />
-            <img
-              class="image-mobile"
-              data-js="image-mobile"
-              src="./assets/images/illustration-sign-up-mobile.svg"
-              alt="illustration sign-up"
-            />
-          </div>
-        </article>
-      </section>
-      <section class="success-message" data-js="success-section">
-        <img src="./assets/images/icon-success.svg" alt="icon" />
-        <h2>Thanks for subscribing!</h2>
-        <p>
-          A confirmation email has been sent to
-          <span data-js="success-email" class="success-email"
-            >ash@loremcompany.com</span
-          >. Please open it and click the button inside to confirm your
-          subscription
-        </p>
-        <button>Dismiss message</button>
-      </section>
-    </main>
+              <img
+                class="image-mobile"
+                data-js="image-mobile"
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt="illustration sign-up"
+              />
+            </div>
+          </article>
+        </section>
+        <section class="success-message" data-js="success-section">
+          <img src="./assets/images/icon-success.svg" alt="icon" />
+          <h2>Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <span data-js="success-email" class="success-email"
+              >ash@loremcompany.com</span
+            >. Please open it and click the button inside to confirm your
+            subscription
+          </p>
+          <button onclick="goHome()" data-js="dissmiss-btn">
+            Dismiss message
+          </button>
+        </section>
+      </main>
+    </div>
     <div class="attribution">
       Challenge by<a
         href="https://www.frontendmentor.io?ref=challenge"
