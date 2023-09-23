@@ -55,26 +55,31 @@ main {
   box-shadow: 0px 3px 25px hsl(4, 100%, 67%);
 }
 
-.section, .main-section {
+.section, .success-message, .main-section {
   margin: 0 auto;
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
 }
 
 .main-section {
+  display: none;
   max-width: 926px;
   max-height: 636px;
   overflow: hidden;
   align-items: center;
+}
+.main-section .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .form-article {
   width: 50%;
-  margin-left: 3.5rem;
-  padding: 2.5rem;
+  margin-left: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,8 +143,6 @@ form input {
   min-width: 480px;
   padding: 5rem;
   width: 33vw;
-  display: flex;
-  flex-direction: column;
 }
 .success-message h2 {
   margin: 2rem 0;
@@ -150,6 +153,10 @@ form input {
 .success-message p {
   line-height: 2.5rem;
 }
+.success-message button {
+  width: 100%;
+}
+
 .success-email {
   font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
   font-weight: 700;
