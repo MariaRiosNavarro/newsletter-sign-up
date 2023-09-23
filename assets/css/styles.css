@@ -62,7 +62,6 @@ main {
 }
 
 .main-section {
-  display: none;
   max-width: 926px;
   max-height: 636px;
   overflow: hidden;
@@ -144,6 +143,7 @@ form label {
 }
 
 .success-message {
+  display: none;
   min-width: 480px;
   padding: 5rem;
   width: 33vw;

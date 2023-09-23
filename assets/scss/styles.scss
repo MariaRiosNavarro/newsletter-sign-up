@@ -70,7 +70,7 @@ main {
 // ---🖥️------------🖥️-------------Main Section DESKTOP--------🖥️----------🖥️----------🖥️
 
 .main-section {
-  display: none;
+  // display: none;
   // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
   max-width: 926px;
@@ -156,7 +156,7 @@ form {
 // ------------✅----------------Sucess message DESKTOP---------✅---------------🖥️
 
 .success-message {
-  // display: none;
+  display: none;
   // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
   min-width: 480px;
