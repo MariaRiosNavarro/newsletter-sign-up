@@ -42,6 +42,7 @@ const submitData = () => {
     mainSection.style.display = "none";
     successEmailMessage.innerHTML = email;
     successSection.style.display = "block";
+    emailInput.value = "";
   }
 
   //   5.-remove the error styles if the focus are inside
