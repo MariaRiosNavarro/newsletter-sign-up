@@ -31,6 +31,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: antiquewhite;
 }
 
 li {
@@ -40,10 +41,13 @@ li {
 }
 
 main {
-  padding-top: 10%;
   max-width: 1440px;
-  margin: 0 auto;
   width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -71,6 +75,30 @@ main {
   margin: 0 auto;
   background-color: $white;
   border-radius: 30px;
+}
+
+// ---mobile image in desktop
+
+.image-mobile {
+  display: none;
+}
+
+// -------Footer
+
+.attribution {
+  display: block;
+  text-align: center;
+  color: antiquewhite;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 35vw;
+  p {
+    color: antiquewhite;
+  }
+  a {
+    color: $tomato;
+  }
 }
 
 // ---🖥️------------🖥️-------------Main Section DESKTOP--------🖥️----------🖥️----------🖥️
@@ -161,7 +189,7 @@ form {
 // ------------✅----------------Sucess message DESKTOP---------✅---------------🖥️
 
 .success-message {
-  display: none;
+  display: block;
   // ------------------------------!DISPLAY NONE/BLOCK TOGGLE for JS
   @extend .section;
   min-width: 480px;
@@ -187,17 +215,20 @@ form {
   font-weight: 700;
 }
 
-.attribution,
-.image-mobile {
-  display: none;
+// -remove atribuation is screen is to small
+
+@media screen and (max-height: 682px) {
+  .attribution {
+    display: none;
+  }
 }
 
 // ----////////////////-------💻-----------------SMALL DESKSTOP/Tablets---------💻-------------------💻
 
-@media (max-width: 926px) {
+@media screen and (max-width: 926px) {
   .main-section {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .form-article {
     gap: 2rem;
@@ -314,22 +345,25 @@ form {
   // ---////////////////-----------✅---------Mobile Sucess Section---------✅---------📱
 
   .success-message {
-    margin: 0;
-    padding-top: 14.5rem;
+    margin: 0 auto;
     height: 100vh;
     width: 100%;
-    min-width: 375px;
-    padding: 14.5rem 2.5rem 2.5rem;
+    min-width: 290px;
+    padding: 14.5rem 2.5rem 2.5rem 2.5rem;
     position: relative;
+
+    p {
+      width: calc(100% - 5rem);
+    }
 
     h2 {
       font-size: 3.5rem;
     }
     button {
       position: absolute;
-      bottom: 1rem;
-      width: 100%;
-      max-width: 325px;
+      bottom: 2.5rem;
+      width: calc(100% - 5rem);
+      min-width: 290px;
     }
   }
 }
@@ -358,12 +392,4 @@ form {
   &:active {
     border: $tomato;
   }
-}
-
-.block {
-  display: block;
-}
-
-.none {
-  display: none;
 }
