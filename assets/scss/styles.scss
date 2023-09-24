@@ -92,7 +92,8 @@ main {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  left: 35vw;
+  left: 50%;
+  transform: translateX(-50%);
   p {
     color: antiquewhite;
   }
