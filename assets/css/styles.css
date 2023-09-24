@@ -18,6 +18,14 @@ html {
   font-size: 62.5%;
 }
 
+p,
+label,
+input {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
 ul {
   list-style: none;
 }
@@ -87,9 +95,11 @@ main {
 }
 .attribution p {
   color: antiquewhite;
+  font-size: 1rem;
 }
 .attribution a {
   color: hsl(4, 100%, 67%);
+  font-size: 1rem;
 }
 
 .main-section {
@@ -136,9 +146,6 @@ h2 {
 }
 
 p {
-  font-size: 1.6rem;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-weight: 400;
   color: hsl(235, 18%, 26%);
   line-height: 2.5rem;
 }
@@ -168,6 +175,10 @@ form input {
   padding: 2rem;
   border: 1px solid hsl(231, 7%, 60%);
   cursor: pointer;
+}
+form input[type=submit] {
+  font-family: Roboto-Bold, Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 form label {
   font-family: Roboto-Bold, Arial, Helvetica, sans-serif;

@@ -25,6 +25,13 @@ html {
   font-size: 62.5%;
 }
 
+p,
+label,
+input {
+  @include robo-light;
+  font-size: 1.6rem;
+}
+
 ul {
   list-style: none;
 }
@@ -96,9 +103,11 @@ main {
   transform: translateX(-50%);
   p {
     color: antiquewhite;
+    font-size: 1rem;
   }
   a {
     color: $tomato;
+    font-size: 1rem;
   }
 }
 
@@ -147,8 +156,6 @@ h2 {
 }
 
 p {
-  font-size: 1.6rem;
-  @include robo-light;
   color: $charcoal-grey;
   line-height: 2.5rem;
 }
@@ -181,6 +188,7 @@ form {
   }
   input[type="submit"] {
     @extend .btn;
+    @include robo-bold;
   }
   label {
     @include robo-bold;
