@@ -59,7 +59,7 @@ Users should be able to:
 ### Useful resources
 
 - [codelessly](https://codelessly.com/) - To analice the Design without Figma Design
-- [my JS cheatsheet](https://www.example.com) - My own cheatsheet
+- [my JS cheatsheet](https://mariariosnavarro.github.io/jssheet/) - My own cheatsheet
 
 ## Author
 
